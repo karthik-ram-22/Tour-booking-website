@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.button {
+  background-color: grey;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.column {
+  float: left;
+  width: 25%;
+hieght: 500%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 100px;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGFqJTIwbWFoYWx8ZW58MHx8MHx8&w=1000&q=80");
+  background-position: center center;
+  color: BLACK;
+  font-family: Brush Script MT;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>VISIT AGRA</h1>
+<a href="bookingform.html"><button class="button">Book Now!!</button></a>
+  
+</div>
+
+<h1 style="text-align:center">Itinerary</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQucmJWs4CqcOhcW71g_ngye1cPgPMmffyEaw&usqp=CAU" alt="Akbar’s Tomb, Agra" style="width:100%">
+      <div class="container">
+        <h2>Akbar’s Tomb, Agra</h2>
+        <p class="title">Day - 1</p>
+        <p>Pickup from Agra Airport<br><br>Check-in to Hotel Marine House</p>
+        <p>A Vist to Akbar’s Tomb and Surroundings</p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXsnJa81udXKtlvT3sRAivmEa_VL1q_m7fQ&usqp=CAU" alt="Taj Mahal" style="width:100%">
+      <div class="container">
+        <h2>Taj Mahal</h2>
+        <p class="title">Day - 2</p>
+        <p>Early Breakfast<br><br>Visit to Taj Mahal</p>
+        <p>Shopping in the Evening</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRamICTT8cq8P8RpocXpu4M8k0bSOjGi8eTSw&usqp=CAU" alt="Agra Fort" style="width:100%">
+      <div class="container">
+        <h2>Agra Fort</h2>
+        <p class="title">Day - 3</p>
+        <p>Check-out from Hotel Marine House<br><br>A Visit to Agra Fort</p>
+        <p>Check-in to Radisson Hotel Agra</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEj_oud33tzOfKTQCTxBx5GaG35mQOrSvVEw&usqp=CAU" alt="Fatehpur Sikri" style="width:100%">
+      <div class="container">
+        <h2>Fatehpur Sikri</h2>
+        <p class="title">Day - 4</p>
+        <p>Visit to Fatehpur Sikri<br><br>Time for personal visit</p>
+        <p>Departure from Agra</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

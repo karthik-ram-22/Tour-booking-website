@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="feedback.css" rel="stylesheet" />
+    <title></title>
+    <script type="text/javascript" src="valid.js">
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="ul1">
+            <li style="float: left"><a href="#">Sign In</a></li>
+            <li style="float:left"><a href="#">Book a trip</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div class="title">
+        <span class="title-text"><h1>Feedbacks and Complaints Sheet</h1></span>
+    </div>
+
+    </div>
+
+
+
+    <div class="main-content">
+        <form class="myform" id="myform" name="myform" action="upload.php" enctype="multipart/form-data" method="post">
+            <table>
+                <tr>
+                    <td><label>Name of the Participant</label></td>
+                    <td colspan="2">
+                        <label for="name"></label><input
+									type="text"
+									class="name"
+									id="name"
+									name="name"
+									size="50"
+									placeholder="Enter Your Name"
+                       />
+                        <br><span id="sp1"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Participant's Age</label></td>
+                    <td colspan="2">
+                        <label for="age"></label><input
+									type="number"
+									class="age"
+									name="age"
+									id="age"
+									size="5"
+									placeholder="Enter Your Age"
+							/>
+                        <br><span id="sp2"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Date of Trip</label></td>
+                    <td colspan="2">
+                        <label for="dot"></label><input type="date" id="date" class="date" name="date"
+							/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Number of members for the trip</label></td>
+                    <td colspan="2">
+                        <label for="mem"></label><input type="number" id="mem" class="mem" name="mem">
+                        <br><span id="sp4"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Trip Package</label></td>
+                    <td colspan="2">
+
+                        <label for="trip-drop"></label><select name="trip-drop[]" multiple id="trip-drop">
+                                <option value="0">
+                                    --select your trip package--
+                                </option>
+                                <option value="1">Andaman</option>
+                                <option value="2">Goa</option>
+                                <option value="3">Agra</option>
+                                <option value="4">Varanasi</option>
+                            </select>
+
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><label>Rate our Trip Package out of 5</label></td>
+                    <td colspan="3">
+                        <label>
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Your Email ID:</label></td>
+                    <td colspan="3"><label for="mail"></label><input type="email" class="mail" id="mail" name="mail" size="80" placeholder="Enter your emailID"></td>
+                    <br>
+                    <span id="sp7"></span>
+                </tr>
+
+                <tr>
+                    <td><label>Your Phone Number:</label></td>
+                    <td colspan="3"><label for="pno"></label><input type="number" class="pno" id="pno" name="pno" size="60" placeholder="Enter your Phone number"> </td>
+                </tr>
+
+                <tr>
+                    <td><label>Any Feedbacks?</label></td>
+                    <td colspan="3">
+
+                        <label for="textfeed"></label><textarea rows="10" cols="50" id="textfeed" name="textfeed"></textarea>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="8">-----------Complaints-------------</td>
+                </tr>
+
+                <tr>
+                    <td><label>Any Complaints Regarding Lack of Service or Quality of Service</label></td>
+                    <td colspan="3">
+                        <label>
+                            <textarea rows="10" cols="50" id="textcomp" name="textcomp"></textarea>
+                        </label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Please upload a photo for verification</label>
+                    </td>
+                    <td>
+			    <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <input type="file" name="image">
+			    </form>
+                    </td>
+                </tr>
+
+
+                <tr></tr>
+                <tr></tr>
+
+                <tr>
+                    <td style="align-content: center"><input type="submit" value="submit and upload" id="submit" name="submit" onclick="validate()"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="reset" name="reset" id="reset" value="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="container">
+        <h4 class="h4">&nbsp;Contact us at:</h4>
+      <div class="grid-container">
+        <div class="grid-item">Phone number:</div>
+        <div class="grid-item">044-26175591,+91-8227500139</div>
+        <div class="grid-item">Email:&nbsp;</div>
+        <div class="grid-item"><a href="#">toursandtravels@gmail.com</a></div>
+        <div class="grid-item">Address:</div>
+        <div class="grid-item">No-4 Apex block,Chamiers Road,Raja Annamalai Puram,Chennai-600028</div>
+      </div>
+
+
+        <br><br>
+        <h4>For membership, please click here</h4>
+
+
+        <p><a href="#" class="mem-link">Get Membership</a></p>
+
+        <span class="copyright">
+            <p>Copyright &copy Developer 2022</p>
+        </span>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

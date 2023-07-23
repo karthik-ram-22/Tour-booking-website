@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tour &amp; Travels System</title>
+<link href="stylestart.css" rel="stylesheet" type="text/css" />
+<script>
+  function check()
+  {
+    var t=document.getElementById("o").value;
+    var h=/^[a-zA-Z0-9+]+@[a-zA-Z0-9.-]+$/g;
+    if(!h.test(t))
+    {
+        window.alert("Please enter valid email id");
+    }
+    var m=document.getElementById("q").value;
+ var userchecks=/[a-zA-Z0-9@]{8,}/g;//checks for character length greater than 8
+ if(!userchecks.test(m))
+ {
+    window.alert("password should contain atleast 8 characters");
+ }
+  }
+</script>
+</head>
+<body>
+<div id="header">
+<div align="center">
+<span class="headingMain">Holiday booking Portal</span>
+</div>
+</div>
+<br />
+<br />
+<div align="center"><br />
+<br />
+<span class="subHead">Registration Panel</span><br />
+<br />
+
+<form method="post" action="signup.php">
+<table border="0" align="center" cellpadding="5" cellspacing="5" class="design">
+<tr><td colspan="2" class="info" align="center"><?php echo $info;?></td></tr>
+<tr><td class="labels">Name : </td><td><input type="text" size="25" name="name" class="fields" id="n" placeholder="Enter Full Name" required="required" autocomplete="off" /></td></tr>
+<tr><td class="labels">Email : </td><td><input type="email" size="25" name="email" id="o" class="fields" placeholder="Enter Email ID" required="required" autocomplete="off" /></td></tr>
+<tr><td class="labels">Contact : </td><td><input type="text" size="25" name="contact" id="p" class="fields" placeholder="Enter Mobile No." required="required" autocomplete="off" /></td></tr>
+<tr><td class="labels">Password : </td><td><input type="password" size="25" name="pass" id="q" class="fields" placeholder="Enter Password" required="required" /></td></tr>
+<tr><td colspan="2" align="center"><input type="submit" onclick="check()" class="fields" name="submit"/></td></tr>
+</table>
+</form>
+<br />
+<br />
+<a href="home.html" class="link">HOME</a>
+</div>
+</body>
+</html>
